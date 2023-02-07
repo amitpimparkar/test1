@@ -1,0 +1,36 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Customer",
+    "presentationColumns" : [ {
+      "name" : "Row Wid",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Customer.Row Wid"
+    }, {
+      "name" : "Customer Number",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Customer.Customer Number"
+    }, {
+      "name" : "Customer Name",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Customer.Customer Name"
+    }, {
+      "name" : "Active Flg",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Customer.Active Flg"
+    }, {
+      "name" : "Creation Date",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Customer.Creation Date"
+    }, {
+      "name" : "Update Date",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Customer.Update Date"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Customer",
+      "sourceLogicalTable" : "logicalTable:Sales.Dim - Customer",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Customer.Total"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Customer.Detail",
+        "displayColumn" : "presentationColumn:Sales.Dim - Customer.Customer Name"
+      } ]
+    } ]
+  }
+}

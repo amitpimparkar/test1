@@ -1,0 +1,64 @@
+{
+  "presentationTable" : {
+    "name" : "Dim - Location",
+    "presentationColumns" : [ {
+      "name" : "Row Wid",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Location.Row Wid"
+    }, {
+      "name" : "Location Code",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Location.Location Code"
+    }, {
+      "name" : "Location Name",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Location.Location Name"
+    }, {
+      "name" : "Country",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Location.Country"
+    }, {
+      "name" : "State",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Location.State"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Location.City"
+    }, {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Location.Area"
+    }, {
+      "name" : "Active Flg",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Location.Active Flg"
+    }, {
+      "name" : "Creation Date",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Location.Creation Date"
+    }, {
+      "name" : "Update Date",
+      "sourceLogicalColumn" : "logicalColumn:Sales.Dim - Location.Update Date"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Location",
+      "sourceLogicalTable" : "logicalTable:Sales.Dim - Location",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Location.Total"
+      }, {
+        "name" : "Country",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Location.Country",
+        "displayColumn" : "presentationColumn:Sales.Dim - Location.Country"
+      }, {
+        "name" : "State",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Location.State",
+        "displayColumn" : "presentationColumn:Sales.Dim - Location.State"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Location.City",
+        "displayColumn" : "presentationColumn:Sales.Dim - Location.Area"
+      }, {
+        "name" : "Area",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Location.Area",
+        "displayColumn" : "presentationColumn:Sales.Dim - Location.Area"
+      }, {
+        "name" : "Detail",
+        "sourceLogicalLevel" : "logicalLevel:Sales.Dim - Location.Detail",
+        "displayColumn" : "presentationColumn:Sales.Dim - Location.Row Wid"
+      } ]
+    } ]
+  }
+}
